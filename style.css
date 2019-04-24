@@ -1,0 +1,105 @@
+body{
+    background-color: rgba(231, 238, 230, 0.253);
+  }
+  img{
+  background-image: url();
+  opacity: 0.8;
+  text-align:center;
+  background-repeat: no-repeat;
+  transform: translateX(100);
+  width: 80%;
+  height: 80%;
+  background-size: cover;
+  margin-left: 200px;
+}
+  button:hover{
+    background-color: #2ecc71;
+    font-weight: bold;
+    color: white;
+  }
+  button{
+    border-radius: 3px;
+    border: 1px solid rgb(82, 82, 148);
+    background-color:lightgray;
+    text-align: center;
+    width: 19%;
+    color:black;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;  
+    margin-bottom: 12px;
+    transition: all 0.4s;
+  }
+  .container {
+  position:relative;
+  border-radius: 10px;
+  }
+  .deleter{
+   color: lightgray;
+   text-align: right;
+   margin-right:16px!important;
+   float: right!important;
+   cursor: pointer;  
+  }
+  .deleter:hover{
+    color:tomato;
+    cursor: pointer;  
+  }
+  #input{
+    text-align: center;
+    width: 76%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+  }
+  #input:focus{
+    border-top-color: brown;
+    border-left-color: white;
+    border-right-color: white;
+    border-color:inherit;
+    box-shadow: none;  
+    outline: none;
+    border-bottom-color: #2ecc71;
+  }
+  #mainDiv{
+    margin-top: 150px;
+    margin-left: 500px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 1px solid lightgray;
+    background-color: white;
+    display: inline-block;
+    width: 30%;
+    opacity: 1 !important;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 2px darkgray;
+  }
+  #mainDiv:hover{
+    box-shadow: 5px 5px 5px 4px darkgray;
+  }
+  .list{
+    font-size: 25px;
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+    padding: 5px;
+    text-decoration: none;
+    transition: text-decoration 1s;
+  }
+  .list.hovered{
+    
+    text-decoration: line-through;
+  }
+  #header{
+    background-color: rgba(102, 96, 96, 0.26);
+    height: 75px;
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+  }

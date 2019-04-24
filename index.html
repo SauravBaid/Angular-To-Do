@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>To-Do</title>
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <div class="container">
+  <div ng-app="myApp" ng-controller="myCtrl" id='mainDiv'>
+    <h3 id="header">My To-do list</h3>
+    <ul>
+      <li ng-repeat="x in names" class="list">{{ x }}<span  class="deleter" ng-mouseover="deleted($index,$event)" ng-mouseleave="notHover($index,$event)"ng-click="remover($index)"> x </span></li>
+    </ul>
+    <input type="text" ng-model="add" placeholder="What do you wanna do" id="input" />
+    <button id="btn" ng-click="adder()">Add</button>
+    <div ng-view id="output"></div>
+  </div>
+</div>
+</body>
+
+</html>
